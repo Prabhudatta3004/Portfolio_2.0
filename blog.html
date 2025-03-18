@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Prabhudatta Mishra</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cosmic.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Cosmic Background -->
+    <div class="cosmic-bg">
+        <div class="cosmic-gradient"></div>
+        <div class="stars"></div>
+        <div class="animated-stars" id="animated-stars"></div>
+        <div class="nebula nebula-1"></div>
+        <div class="nebula nebula-2"></div>
+        <div class="cosmic-dust">
+            <div class="cosmic-ring ring-1"></div>
+            <div class="cosmic-ring ring-2"></div>
+            <div class="cosmic-ring ring-3"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">PRABHUDATTA MISHRA</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="side-quests.html">Side Quests</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobile-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <section class="section blog-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Blog</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Technical insights and thought leadership</p>
+            </div>
+
+            <div class="featured-posts">
+                <!-- First Featured Post -->
+                <div class="featured-post">
+                    <div class="featured-post-image">
+                        <img src="assets/img/blog/distributed-systems-1.jpg" alt="Large-Scale Distributed Systems">
+                    </div>
+                    <div class="featured-post-content">
+                        <div class="post-meta">
+                            <span class="post-category">Distributed Systems</span>
+                            <span class="post-date">March 15, 2025</span>
+                        </div>
+                        <h2 class="featured-post-title">Large-Scale Distributed Systems: Foundations for Scalability and
+                            Fault Tolerance</h2>
+                        <p class="featured-post-excerpt">
+                            In today's digital landscape, where applications serve millions of users simultaneously and
+                            process terabytes of data, distributed systems have become the backbone of modern computing.
+                            This article explores the core principles of designing scalable, resilient distributed
+                            systems that can withstand failures while maintaining performance.
+                        </p>
+                        <div class="featured-post-footer">
+                            <a href="https://medium.com/@pmishra4/large-scale-distributed-systems-foundations-for-scalability-and-fault-tolerance-e1037c930bbb"
+                                class="btn read-more-btn" target="_blank">
+                                <span>Read on Medium</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Featured Post -->
+                <div class="featured-post">
+                    <div class="featured-post-image">
+                        <img src="assets/img/blog/distributed-systems-2.jpg"
+                            alt="Large-Scale Distributed Systems Part 2">
+                    </div>
+                    <div class="featured-post-content">
+                        <div class="post-meta">
+                            <span class="post-category">Distributed Systems</span>
+                            <span class="post-date">March 20, 2025</span>
+                        </div>
+                        <h2 class="featured-post-title">Large-Scale Distributed Systems: Advanced Concepts and
+                            Implementation</h2>
+                        <p class="featured-post-excerpt">
+                            Building on the foundations covered in part one, this article delves deeper into advanced
+                            distributed systems concepts including consensus algorithms, replication strategies, and
+                            practical implementation patterns. Learn how leading tech companies architect systems that
+                            scale to billions of users while maintaining high availability.
+                        </p>
+                        <div class="featured-post-footer">
+                            <a href="https://medium.com/@pmishra4/large-scale-distributed-systems-foundations-for-scalability-and-fault-tolerance-e1037c930bbb"
+                                class="btn read-more-btn" target="_blank">
+                                <span>Read on Medium</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="upcoming-posts-header">
+                <h3>Upcoming Articles</h3>
+                <div class="section-small-divider"></div>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="assets/img/blog/multi-cloud.jpg" alt="Multi-Cloud Architecture">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Cloud Computing</span>
+                            <span class="post-tag">Coming Soon</span>
+                        </div>
+                        <h3 class="blog-card-title">Designing Resilient Multi-Cloud Kubernetes Architectures</h3>
+                        <p class="blog-card-excerpt">
+                            Multi-cloud deployments offer significant advantages in terms of fault tolerance and vendor
+                            independence. This article will examine strategies for orchestrating Kubernetes clusters
+                            across AWS, Azure, and GCP for optimal performance and resilience.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="assets/img/blog/consensus.jpg" alt="Consensus Algorithms">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">Distributed Computing</span>
+                            <span class="post-tag">Coming Soon</span>
+                        </div>
+                        <h3 class="blog-card-title">Understanding Consensus Algorithms: Paxos vs. Raft</h3>
+                        <p class="blog-card-excerpt">
+                            Consensus algorithms form the foundation of distributed systems, enabling a group of nodes
+                            to agree on a single value or sequence of values despite potential failures. This deep dive
+                            will compare two leading approaches: Paxos and Raft.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="assets/img/blog/load-balancing.jpg" alt="Advanced Load Balancing">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-category">System Design</span>
+                            <span class="post-tag">Coming Soon</span>
+                        </div>
+                        <h3 class="blog-card-title">Advanced Load Balancing Techniques for High-Traffic Applications
+                        </h3>
+                        <p class="blog-card-excerpt">
+                            As web applications scale, intelligent traffic distribution becomes crucial. This article
+                            will explore sophisticated load balancing strategies that go beyond round-robin, including
+                            adaptive algorithms and health-aware routing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-cta">
+                <div class="blog-cta-content">
+                    <h3>Want to read more?</h3>
+                    <p>Follow me on Medium where I regularly publish articles on distributed systems, cloud computing,
+                        and system design.</p>
+                </div>
+                <a href="https://medium.com/@pmishra4" class="btn" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    Visit My Medium Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

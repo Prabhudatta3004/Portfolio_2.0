@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Prabhudatta Mishra</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cosmic.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Cosmic Background -->
+    <div class="cosmic-bg">
+        <div class="cosmic-gradient"></div>
+        <div class="stars"></div>
+        <div class="animated-stars" id="animated-stars"></div>
+        <div class="nebula nebula-1"></div>
+        <div class="nebula nebula-2"></div>
+        <div class="cosmic-dust">
+            <div class="cosmic-ring ring-1"></div>
+            <div class="cosmic-ring ring-2"></div>
+            <div class="cosmic-ring ring-3"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">PRABHUDATTA MISHRA</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="side-quests.html">Side Quests</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobile-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Beyond The Code</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">The architecture of my thoughts and experiences</p>
+            </div>
+
+            <div class="about-me-content">
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                </path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3>The Architecture Enthusiast</h3>
+                        <p>I see distributed systems like city planning. Imagine Kubernetes clusters as neighborhoods
+                            and containers as buildings—each with a purpose, communicating through carefully designed
+                            streets (APIs). This perspective helps me build resilient digital cities that survive even
+                            when streets flood or buildings need repairs.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                </polygon>
+                            </svg>
+                        </div>
+                        <h3>The Problem Solver</h3>
+                        <p>At NCSU, I developed a hybrid load balancer that's like a smart traffic controller for
+                            data—it knows which roads have potholes (failing servers) and redirects digital traffic to
+                            smoother routes. My age-based scheduler ensures every process gets its fair turn, like
+                            ensuring everyone in line gets served, preventing "starvation" even during rush hour.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3>The Multi-Cloud Navigator</h3>
+                        <p>I orchestrate systems across AWS, Azure, and GCP like a conductor leading musicians from
+                            different countries. Each cloud speaks its own language, but I've learned to harmonize them
+                            into a unified symphony. This multi-cloud approach reduced infrastructure costs by 31% at
+                            Glosity while increasing hiring match accuracy by 44%.</p>
+                    </div>
+                </div>
+
+                <div class="about-content-main">
+                    <div class="about-text-section">
+                        <h3 class="about-heading">My Digital Philosophy</h3>
+                        <p>I believe infrastructure should be invisible—like electricity that powers your home without
+                            you thinking about it. This drives my passion for building self-healing systems that handle
+                            their own problems. When designing distributed systems, I draw from nature's resilience
+                            patterns—ant colonies don't collapse when a few ants fail, and neither should our digital
+                            ecosystems.</p>
+                        <p>My research at NCSU focuses on making machine learning and computer vision applications run
+                            seamlessly across multiple clouds. Think of it as teaching AI to be cloud-agnostic—able to
+                            work from any digital environment without missing a beat.</p>
+                    </div>
+
+                    <div class="expertise-grid">
+                        <div class="expertise-item">
+                            <div class="expertise-meter">
+                                <div class="expertise-fill" style="height: 85%"></div>
+                                <span class="expertise-percentage">85%</span>
+                            </div>
+                            <span class="expertise-label">Kubernetes</span>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-meter">
+                                <div class="expertise-fill" style="height: 90%"></div>
+                                <span class="expertise-percentage">90%</span>
+                            </div>
+                            <span class="expertise-label">AWS/Azure</span>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-meter">
+                                <div class="expertise-fill" style="height: 80%"></div>
+                                <span class="expertise-percentage">80%</span>
+                            </div>
+                            <span class="expertise-label">Go/Python</span>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-meter">
+                                <div class="expertise-fill" style="height: 75%"></div>
+                                <span class="expertise-percentage">75%</span>
+                            </div>
+                            <span class="expertise-label">Terraform</span>
+                        </div>
+                    </div>
+
+                    <div class="about-text-section">
+                        <h3 class="about-heading">Career Highlights</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Research Assistant | North Carolina State University</h4>
+                                    <span class="timeline-date">Feb 2025 - Present</span>
+                                    <p>Designing fault-tolerant Kubernetes clusters that make ML models as reliable as
+                                        they are intelligent.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Software Engineer | Glosity</h4>
+                                    <span class="timeline-date">June 2022 - July 2023</span>
+                                    <p>Created a profile recommender that matches skills to opportunities with 44%
+                                        better accuracy.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Master of Computer Science | NCSU</h4>
+                                    <span class="timeline-date">Aug 2023 - Dec 2024</span>
+                                    <p>CGPA 3.77/4.0 | Focused on Operating Systems, Cloud Computing, and Distributed
+                                        Systems</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-cta">
+                <a href="projects.html" class="btn">Explore My Projects</a>
+                <a href="assets/files/resume.pdf" class="btn btn-filled" target="_blank">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+
+</html>

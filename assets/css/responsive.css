@@ -1,0 +1,170 @@
+/* Responsive design rules */
+@media (max-width: 1024px) {
+    .hero-name {
+        font-size: 52px;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-divider {
+        margin: 0 auto 30px;
+    }
+
+    .hero-cta {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        max-width: 450px;
+        margin: 0 auto 40px;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        transition: var(--transition);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li a {
+        font-size: 18px;
+    }
+
+    .hero-name {
+        font-size: 42px;
+    }
+
+    .hero-title {
+        font-size: 20px;
+    }
+
+    .profile-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .ring-1 {
+        width: 600px;
+        height: 600px;
+    }
+
+    .ring-2 {
+        width: 400px;
+        height: 400px;
+    }
+
+    .ring-3 {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-greeting {
+        font-size: 18px;
+    }
+
+    .hero-name {
+        font-size: 36px;
+    }
+
+    .hero-title {
+        font-size: 18px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .about-text ul {
+        text-align: left;
+    }
+
+    .nebula-1 {
+        width: 300px;
+        height: 200px;
+    }
+
+    .nebula-2 {
+        width: 400px;
+        height: 300px;
+    }
+}

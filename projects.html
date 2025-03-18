@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Prabhudatta Mishra</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cosmic.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Cosmic Background -->
+    <div class="cosmic-bg">
+        <div class="cosmic-gradient"></div>
+        <div class="stars"></div>
+        <div class="animated-stars" id="animated-stars"></div>
+        <div class="nebula nebula-1"></div>
+        <div class="nebula nebula-2"></div>
+        <div class="cosmic-dust">
+            <div class="cosmic-ring ring-1"></div>
+            <div class="cosmic-ring ring-2"></div>
+            <div class="cosmic-ring ring-3"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">PRABHUDATTA MISHRA</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="side-quests.html">Side Quests</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobile-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Building the infrastructure of tomorrow</p>
+            </div>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="cloud">Cloud</button>
+                <button class="filter-btn" data-filter="os">Operating Systems</button>
+                <button class="filter-btn" data-filter="distributed">Distributed Systems</button>
+            </div>
+
+            <div class="projects-container">
+                <!-- CLOUD PROJECTS -->
+                <div class="project-card" data-category="cloud">
+                    <div class="project-front">
+                        <div class="project-tag">Cloud</div>
+                        <h3>Multi-Cloud Kubernetes Clusters</h3>
+                        <p>Designed and managed Kubernetes clusters across AWS, Azure, and GCP for machine learning and
+                            computer vision applications.</p>
+                        <div class="project-technologies">
+                            <span>Kubernetes</span>
+                            <span>Terraform</span>
+                            <span>AWS</span>
+                            <span>Azure</span>
+                            <span>GCP</span>
+                        </div>
+                        <a href="https://github.com/" class="project-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="cloud">
+                    <div class="project-front">
+                        <div class="project-tag">Cloud</div>
+                        <h3>Profile Recommender System</h3>
+                        <p>Orchestrated the deployment of a scalable profile recommender system on AWS and DigitalOcean,
+                            achieving a 44% increase in hiring match accuracy.</p>
+                        <div class="project-technologies">
+                            <span>AWS</span>
+                            <span>DigitalOcean</span>
+                            <span>Docker</span>
+                            <span>Microservices</span>
+                        </div>
+                        <a href="https://github.com/" class="project-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="cloud">
+                    <div class="project-front">
+                        <div class="project-tag">Cloud</div>
+                        <h3>Multipurpose Academic Chatbot</h3>
+                        <p>Designed and deployed a multipurpose chatbot on AWS for 24/7 academic support, reducing
+                            response times by 50% and boosting user engagement.</p>
+                        <div class="project-technologies">
+                            <span>AWS Lambda</span>
+                            <span>Amazon Lex</span>
+                            <span>DynamoDB</span>
+                            <span>NLP</span>
+                        </div>
+                        <a href="https://github.com/" class="project-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- OPERATING SYSTEMS PROJECTS -->
+                <div class="project-card" data-category="os">
+                    <div class="project-front">
+                        <div class="project-tag">Operating Systems</div>
+                        <h3>Hybrid Load Balancer</h3>
+                        <p>Constructed a hybrid Layer 4/Layer 7 load balancer in Golang with dynamic traffic management
+                            and high fault tolerance.</p>
+                        <div class="project-technologies">
+                            <span>Golang</span>
+                            <span>Traffic Management</span>
+                            <span>Fault Tolerance</span>
+                        </div>
+                        <a href="https://github.com/" class="project-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="os">
+                    <div class="project-front">
+                        <div class="project-tag">Operating Systems</div>
+                        <h3>Age-Based Linux-Like Scheduler</h3>
+                        <p>Implemented an epoch-based scheduler where processes receive CPU quantum based on priority,
+                            ensuring efficient and fair time allocation.</p>
+                        <div class="project-technologies">
+                            <span>C</span>
+                            <span>OS Kernels</span>
+                            <span>Process Scheduling</span>
+                        </div>
+                        <a href="https://github.com/" class="project-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="os">
+                    <div class="project-front">
+                        <div class="project-tag">Operating Systems</div>
+                        <h3>Container Orchestration Pipeline</h3>
+                        <p>Optimized container orchestration pipelines for large-scale data processing and training
+                            workloads, improving system performance.</p>
+                        <div class="project-technologies">
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>CI/CD</span>
+                            <span>ML Frameworks</span>
+                        </div>
+                        <a href="https://github.com/" class="project-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- DISTRIBUTED SYSTEMS PROJECTS -->
+                <div class="project-card" data-category="distributed">
+                    <div class="project-front">
+                        <div class="project-tag">Distributed Systems</div>
+                        <h3>Fault-Tolerant Primary-Backup</h3>
+                        <p>Integrated a ViewServer to monitor server health, promote backups during failures, and
+                            maintain seamless client-server communication.</p>
+                        <div class="project-technologies">
+                            <span>Java</span>
+                            <span>Server Failover</span>
+                            <span>RPC</span>
+                        </div>
+                        <a href="https://github.com/" class="project-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="distributed">
+                    <div class="project-front">
+                        <div class="project-tag">Distributed Systems</div>
+                        <h3>Paxos-Based Replicated State Machine</h3>
+                        <p>Developed a fault-tolerant state machine leveraging the Paxos Consensus Algorithm for
+                            consistent, reliable command ordering.</p>
+                        <div class="project-technologies">
+                            <span>Java</span>
+                            <span>Consensus Algorithm</span>
+                            <span>Fault Tolerance</span>
+                        </div>
+                        <a href="https://github.com/" class="project-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="distributed">
+                    <div class="project-front">
+                        <div class="project-tag">Distributed Systems</div>
+                        <h3>Scalable Distributed Pub-Sub System</h3>
+                        <p>Developed a scalable distributed Pub-Sub system in Go, leveraging goroutines for concurrency
+                            with real-time monitoring.</p>
+                        <div class="project-technologies">
+                            <span>Go</span>
+                            <span>Prometheus</span>
+                            <span>Grafana</span>
+                        </div>
+                        <a href="https://github.com/" class="project-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/projects.js"></script>
+</body>
+
+</html>

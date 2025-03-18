@@ -1,0 +1,203 @@
+/* Cosmic background effects */
+.cosmic-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.cosmic-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, var(--cosmic-blue) 0%, var(--primary) 70%);
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 40px 70px, #ffffff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 50px 160px, #ffffff, rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 130px 80px, #ffffff, rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 160px 120px, #ffffff, rgba(0, 0, 0, 0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+}
+
+.animated-stars span {
+    position: absolute;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    animation: twinkle var(--duration) linear infinite;
+    opacity: 0;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: var(--opacity);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.nebula {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+    filter: blur(60px);
+}
+
+.nebula-1 {
+    top: -100px;
+    left: -100px;
+    width: 500px;
+    height: 300px;
+    background: var(--cosmic-purple);
+    transform: rotate(45deg);
+}
+
+.nebula-2 {
+    bottom: -100px;
+    right: -100px;
+    width: 600px;
+    height: 400px;
+    background: var(--cosmic-blue);
+    transform: rotate(-45deg);
+}
+
+.cosmic-dust {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cosmic-ring {
+    position: absolute;
+    border: 1px solid var(--secondary);
+    border-radius: 50%;
+    opacity: 0.03;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ring-1 {
+    width: 800px;
+    height: 800px;
+}
+
+.ring-2 {
+    width: 600px;
+    height: 600px;
+}
+
+.ring-3 {
+    width: 400px;
+    height: 400px;
+}
+
+/* Shooting stars */
+.shooting-star {
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    animation: shootingstar var(--duration) linear infinite;
+    opacity: 0;
+}
+
+@keyframes shootingstar {
+    0% {
+        opacity: 0;
+        width: 0;
+        transform: translateX(0);
+    }
+
+    50% {
+        opacity: 1;
+        width: var(--width);
+    }
+
+    100% {
+        opacity: 0;
+        width: 0;
+        transform: translateX(var(--distance));
+    }
+}
+
+/* Cosmic dust particles */
+.dust-particle {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: float var(--duration) ease-in-out infinite alternate;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(var(--x), var(--y));
+    }
+}
+
+/* Cosmic glow for interactive elements */
+.cosmic-glow {
+    position: relative;
+}
+
+.cosmic-glow::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: radial-gradient(circle, rgba(79, 70, 229, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.cosmic-glow:hover::before {
+    opacity: 1;
+}
+
+/* Constellation lines */
+.constellation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.1;
+}
+
+.constellation line {
+    stroke: var(--secondary);
+    stroke-width: 0.5;
+}
+
+.constellation circle {
+    fill: var(--secondary);
+}

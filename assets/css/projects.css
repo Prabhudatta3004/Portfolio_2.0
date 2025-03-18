@@ -1,0 +1,220 @@
+/* Projects Page Styles */
+.projects-section {
+    padding-top: 120px;
+    min-height: 100vh;
+}
+
+.project-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--accent);
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--secondary);
+    color: var(--primary);
+    border-color: var(--secondary);
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    position: relative;
+}
+
+.project-card {
+    background: rgba(20, 20, 40, 0.5);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 100%;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(30, 30, 60, 0.6);
+}
+
+.project-front {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-tag {
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: var(--accent);
+    align-self: flex-start;
+}
+
+.project-front h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--secondary);
+}
+
+.project-front p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #cccccc;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.project-technologies span {
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    font-size: 12px;
+    color: var(--accent);
+    white-space: nowrap;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    font-size: 14px;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.project-link:hover {
+    background: var(--secondary);
+    color: var(--primary);
+}
+
+.project-link svg {
+    transition: var(--transition);
+}
+
+.project-link:hover svg {
+    stroke: var(--primary);
+}
+
+/* Animation for project cards */
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card {
+    animation: cardEntrance 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+/* Staggered animation for cards */
+.project-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.project-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.project-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.project-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.project-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.project-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.project-card:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.project-card:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.project-card:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-section {
+        padding-top: 100px;
+    }
+
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .project-front {
+        padding: 20px;
+    }
+
+    .project-front h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 580px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
