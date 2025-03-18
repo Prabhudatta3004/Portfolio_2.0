@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
+  <!-- Black background -->
+  <rect width="500" height="200" fill="black" />
+  
+  <!-- PAXOS text -->
+  <text x="250" y="115" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="white" text-anchor="middle">PAXOS</text>
+</svg>

@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- Black background -->
+  <rect width="600" height="400" fill="black" />
+  
+  <!-- P2P Network Nodes and Connections -->
+  
+  <!-- Nodes - All equal size to represent peers -->
+  <!-- Node 1 -->
+  <circle cx="110" cy="120" r="20" fill="none" stroke="white" stroke-width="3" />
+  <circle cx="110" cy="120" r="12" fill="white" />
+  
+  <!-- Node 2 -->
+  <circle cx="250" cy="80" r="20" fill="none" stroke="white" stroke-width="3" />
+  <circle cx="250" cy="80" r="12" fill="white" />
+  
+  <!-- Node 3 -->
+  <circle cx="400" cy="120" r="20" fill="none" stroke="white" stroke-width="3" />
+  <circle cx="400" cy="120" r="12" fill="white" />
+  
+  <!-- Node 4 -->
+  <circle cx="490" cy="220" r="20" fill="none" stroke="white" stroke-width="3" />
+  <circle cx="490" cy="220" r="12" fill="white" />
+  
+  <!-- Node 5 -->
+  <circle cx="420" cy="330" r="20" fill="none" stroke="white" stroke-width="3" />
+  <circle cx="420" cy="330" r="12" fill="white" />
+  
+  <!-- Node 6 -->
+  <circle cx="300" cy="350" r="20" fill="none" stroke="white" stroke-width="3" />
+  <circle cx="300" cy="350" r="12" fill="white" />
+  
+  <!-- Node 7 -->
+  <circle cx="170" cy="330" r="20" fill="none" stroke="white" stroke-width="3" />
+  <circle cx="170" cy="330" r="12" fill="white" />
+  
+  <!-- Node 8 -->
+  <circle cx="80" cy="240" r="20" fill="none" stroke="white" stroke-width="3" />
+  <circle cx="80" cy="240" r="12" fill="white" />
+  
+  <!-- Node 9 -->
+  <circle cx="190" cy="200" r="20" fill="none" stroke="white" stroke-width="3" />
+  <circle cx="190" cy="200" r="12" fill="white" />
+  
+  <!-- Node 10 -->
+  <circle cx="300" cy="200" r="20" fill="none" stroke="white" stroke-width="3" />
+  <circle cx="300" cy="200" r="12" fill="white" />
+  
+  <!-- Node 11 -->
+  <circle cx="390" cy="220" r="20" fill="none" stroke="white" stroke-width="3" />
+  <circle cx="390" cy="220" r="12" fill="white" />
+  
+  <!-- P2P Connections - Mesh network topology with equal connections -->
+  <!-- No central hub; each node connected to several neighbors -->
+  <line x1="110" y1="120" x2="250" y2="80" stroke="white" stroke-width="2" />
+  <line x1="110" y1="120" x2="190" y2="200" stroke="white" stroke-width="2" />
+  <line x1="110" y1="120" x2="80" y2="240" stroke="white" stroke-width="2" />
+  
+  <line x1="250" y1="80" x2="400" y2="120" stroke="white" stroke-width="2" />
+  <line x1="250" y1="80" x2="300" y2="200" stroke="white" stroke-width="2" />
+  <line x1="250" y1="80" x2="190" y2="200" stroke="white" stroke-width="2" />
+  
+  <line x1="400" y1="120" x2="490" y2="220" stroke="white" stroke-width="2" />
+  <line x1="400" y1="120" x2="390" y2="220" stroke="white" stroke-width="2" />
+  <line x1="400" y1="120" x2="300" y2="200" stroke="white" stroke-width="2" />
+  
+  <line x1="490" y1="220" x2="420" y2="330" stroke="white" stroke-width="2" />
+  <line x1="490" y1="220" x2="390" y2="220" stroke="white" stroke-width="2" />
+  
+  <line x1="420" y1="330" x2="300" y2="350" stroke="white" stroke-width="2" />
+  <line x1="420" y1="330" x2="390" y2="220" stroke="white" stroke-width="2" />
+  
+  <line x1="300" y1="350" x2="170" y2="330" stroke="white" stroke-width="2" />
+  <line x1="300" y1="350" x2="300" y2="200" stroke="white" stroke-width="2" />
+  
+  <line x1="170" y1="330" x2="80" y2="240" stroke="white" stroke-width="2" />
+  <line x1="170" y1="330" x2="190" y2="200" stroke="white" stroke-width="2" />
+  
+  <line x1="80" y1="240" x2="190" y2="200" stroke="white" stroke-width="2" />
+  
+  <line x1="190" y1="200" x2="300" y2="200" stroke="white" stroke-width="2" />
+  
+  <line x1="300" y1="200" x2="390" y2="220" stroke="white" stroke-width="2" />
+  
+  <!-- Data transfer animations - bidirectional to show P2P sharing -->
+  <!-- Packet 1-2 -->
+  <circle cx="180" cy="100" r="4" fill="white">
+    <animate attributeName="cx" from="110" to="250" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="cy" from="120" to="80" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="180" cy="100" r="4" fill="white">
+    <animate attributeName="cx" from="250" to="110" dur="3.8s" repeatCount="indefinite" />
+    <animate attributeName="cy" from="80" to="120" dur="3.8s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Packet 2-3 -->
+  <circle cx="325" cy="100" r="4" fill="white">
+    <animate attributeName="cx" from="250" to="400" dur="3.5s" repeatCount="indefinite" />
+    <animate attributeName="cy" from="80" to="120" dur="3.5s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Packet 3-4 -->
+  <circle cx="445" cy="170" r="4" fill="white">
+    <animate attributeName="cx" from="400" to="490" dur="3.3s" repeatCount="indefinite" />
+    <animate attributeName="cy" from="120" to="220" dur="3.3s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Packet 9-10 -->
+  <circle cx="245" cy="200" r="4" fill="white">
+    <animate attributeName="cx" from="190" to="300" dur="2.7s" repeatCount="indefinite" />
+    <animate attributeName="cy" from="200" to="200" dur="2.7s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="245" cy="200" r="4" fill="white">
+    <animate attributeName="cx" from="300" to="190" dur="3.1s" repeatCount="indefinite" />
+    <animate attributeName="cy" from="200" to="200" dur="3.1s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Packet 5-6 -->
+  <circle cx="360" cy="340" r="4" fill="white">
+    <animate attributeName="cx" from="420" to="300" dur="3.4s" repeatCount="indefinite" />
+    <animate attributeName="cy" from="330" to="350" dur="3.4s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Packet 6-7 -->
+  <circle cx="235" cy="340" r="4" fill="white">
+    <animate attributeName="cx" from="300" to="170" dur="3.6s" repeatCount="indefinite" />
+    <animate attributeName="cy" from="350" to="330" dur="3.6s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Packet 10-11 -->
+  <circle cx="345" cy="210" r="4" fill="white">
+    <animate attributeName="cx" from="300" to="390" dur="2.9s" repeatCount="indefinite" />
+    <animate attributeName="cy" from="200" to="220" dur="2.9s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="345" cy="210" r="4" fill="white">
+    <animate attributeName="cx" from="390" to="300" dur="3.2s" repeatCount="indefinite" />
+    <animate attributeName="cy" from="220" to="200" dur="3.2s" repeatCount="indefinite" />
+  </circle>
+</svg>

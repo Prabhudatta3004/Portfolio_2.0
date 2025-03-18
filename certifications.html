@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/cosmic.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/certifications.css">
+    <link rel="stylesheet" href="assets/css/certifications-fix.css"> <!-- Added new CSS file -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
@@ -40,7 +41,6 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="side-quests.html">Side Quests</a></li>
                 <li><a href="certifications.html" class="active">Certifications</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -59,156 +59,116 @@
     <section class="section certifications-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">My Certifications</h2>
+                <h2 class="section-title">Cloud Mastery</h2>
                 <div class="section-divider"></div>
-                <p class="section-subtitle">Professional qualifications and credentials</p>
+                <p class="section-subtitle">My multi-cloud certification journey</p>
             </div>
 
-            <div class="certifications-container">
-                <!-- CKA Certificate -->
-                <div class="certification-card">
-                    <div class="certification-icon">
-                        <img src="assets/img/certifications/kubernetes-logo.svg" alt="Kubernetes Logo">
-                    </div>
-                    <div class="certification-content">
-                        <h3>Certified Kubernetes Administrator (CKA)</h3>
-                        <div class="certification-details">
-                            <div class="certification-info">
-                                <span class="info-label">Issuing Organization:</span>
-                                <span class="info-value">The Linux Foundation</span>
-                            </div>
-                            <div class="certification-info">
-                                <span class="info-label">Issue Date:</span>
-                                <span class="info-value">March 2025</span>
-                            </div>
-                            <div class="certification-info">
-                                <span class="info-label">Expiration:</span>
-                                <span class="info-value">March 2028</span>
-                            </div>
-                            <div class="certification-info">
-                                <span class="info-label">Credential ID:</span>
-                                <span class="info-value">LF-abcd1234</span>
-                            </div>
+            <div class="cert-journey-map">
+                <div class="journey-line"></div>
+
+                <!-- AWS Certification -->
+                <div class="cert-milestone milestone-1">
+                    <div class="milestone-connector"></div>
+                    <div class="cert-hexagon">
+                        <div class="cert-icon">
+                            <img src="assets/img/AWS-Logo.png" alt="AWS">
                         </div>
-                        <p class="certification-description">
-                            The Certified Kubernetes Administrator (CKA) program ensures that I have the skills,
-                            knowledge, and competence to perform the responsibilities of Kubernetes administrators. I
-                            demonstrated proficiency in managing, deploying, and maintaining production-grade Kubernetes
-                            clusters.
-                        </p>
-                        <div class="certification-skills">
-                            <span>Cluster Architecture</span>
-                            <span>Installation & Configuration</span>
-                            <span>Workloads & Scheduling</span>
-                            <span>Services & Networking</span>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-badge">75% Complete</div>
+                        <h3>AWS Solutions Architect Associate</h3>
+                        <p>Building scalable, high-performance architectures on the world's leading cloud platform. This
+                            certification validates my expertise in designing resilient systems using AWS services.</p>
+                        <div class="cert-skills">
+                            <span>EC2</span>
+                            <span>S3</span>
+                            <span>VPC</span>
+                            <span>RDS</span>
+                            <span>Lambda</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kubernetes Certification -->
+                <div class="cert-milestone milestone-2">
+                    <div class="milestone-connector"></div>
+                    <div class="cert-hexagon">
+                        <div class="cert-icon">
+                            <img src="assets/img/Kubernetes-logo.png" alt="Kubernetes">
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-badge">60% Complete</div>
+                        <h3>Certified Kubernetes Administrator</h3>
+                        <p>Mastering the industry-standard container orchestration platform to design, deploy and manage
+                            containerized applications at scale across any cloud environment.</p>
+                        <div class="cert-skills">
+                            <span>Containers</span>
+                            <span>Orchestration</span>
+                            <span>Networking</span>
+                            <span>Security</span>
                             <span>Storage</span>
-                            <span>Troubleshooting</span>
                         </div>
-                        <a href="#" class="view-credential-btn" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                            View Credential
-                        </a>
                     </div>
                 </div>
 
-                <!-- AWS SAA Certificate -->
-                <div class="certification-card">
-                    <div class="certification-icon">
-                        <img src="assets/img/certifications/aws-logo.svg" alt="AWS Logo">
+                <!-- GCP Certification -->
+                <div class="cert-milestone milestone-3">
+                    <div class="milestone-connector"></div>
+                    <div class="cert-hexagon">
+                        <div class="cert-icon">
+                            <img src="assets/img/GCP-logo.png" alt="Google Cloud">
+                        </div>
                     </div>
-                    <div class="certification-content">
-                        <h3>AWS Certified Solutions Architect – Associate</h3>
-                        <div class="certification-details">
-                            <div class="certification-info">
-                                <span class="info-label">Issuing Organization:</span>
-                                <span class="info-value">Amazon Web Services (AWS)</span>
-                            </div>
-                            <div class="certification-info">
-                                <span class="info-label">Issue Date:</span>
-                                <span class="info-value">February 2025</span>
-                            </div>
-                            <div class="certification-info">
-                                <span class="info-label">Expiration:</span>
-                                <span class="info-value">February 2028</span>
-                            </div>
-                            <div class="certification-info">
-                                <span class="info-label">Credential ID:</span>
-                                <span class="info-value">AWS-1234567890</span>
-                            </div>
+                    <div class="cert-content">
+                        <div class="cert-badge">40% Complete</div>
+                        <h3>Google Cloud Associate Engineer</h3>
+                        <p>Expanding my multi-cloud expertise with Google's innovative platform, focusing on its
+                            industry-leading data processing and machine learning capabilities.</p>
+                        <div class="cert-skills">
+                            <span>GKE</span>
+                            <span>Cloud Functions</span>
+                            <span>BigQuery</span>
+                            <span>Cloud Storage</span>
+                            <span>IAM</span>
                         </div>
-                        <p class="certification-description">
-                            The AWS Certified Solutions Architect - Associate certification validates my ability to
-                            design and deploy scalable, highly available, and fault-tolerant systems on AWS. This
-                            certification demonstrates my expertise in architecting and deploying secure and robust
-                            applications on AWS technologies.
-                        </p>
-                        <div class="certification-skills">
-                            <span>EC2 & ECS</span>
-                            <span>S3 & Storage Services</span>
-                            <span>VPC & Networking</span>
-                            <span>Database Services</span>
-                            <span>IAM & Security</span>
-                            <span>CloudWatch & Monitoring</span>
-                            <span>High Availability</span>
-                            <span>Cost Optimization</span>
-                        </div>
-                        <a href="#" class="view-credential-btn" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                            View Credential
-                        </a>
                     </div>
                 </div>
             </div>
 
-            <div class="in-progress-section">
-                <h3>Currently In Progress</h3>
-                <div class="in-progress-cards">
-                    <div class="in-progress-card">
-                        <div class="progress-indicator">
-                            <svg viewBox="0 0 36 36">
-                                <path class="circle-bg" d="M18 2.0845
-                                    a 15.9155 15.9155 0 0 1 0 31.831
-                                    a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="rgba(255, 255, 255, 0.1)"
-                                    stroke-width="3" />
-                                <path class="circle" d="M18 2.0845
-                                    a 15.9155 15.9155 0 0 1 0 31.831
-                                    a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#ffffff" stroke-width="3"
-                                    stroke-dasharray="75, 100" />
-                                <text x="18" y="20.5" class="percentage">75%</text>
-                            </svg>
-                        </div>
-                        <h4>AWS Solutions Architect Professional</h4>
-                        <p>Expected completion: July 2025</p>
-                    </div>
+            <div class="certification-philosophy">
+                <div class="philosophy-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                        </path>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                </div>
+                <h3>Why Multi-Cloud?</h3>
+                <p>My certification strategy is deliberate: master the unique strengths of each cloud provider to design
+                    optimal solutions for any scenario. By understanding AWS, GCP, and Kubernetes deeply, I can
+                    architect truly resilient distributed systems that leverage the best technologies across platforms.
+                </p>
+            </div>
 
-                    <div class="in-progress-card">
-                        <div class="progress-indicator">
-                            <svg viewBox="0 0 36 36">
-                                <path class="circle-bg" d="M18 2.0845
-                                    a 15.9155 15.9155 0 0 1 0 31.831
-                                    a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="rgba(255, 255, 255, 0.1)"
-                                    stroke-width="3" />
-                                <path class="circle" d="M18 2.0845
-                                    a 15.9155 15.9155 0 0 1 0 31.831
-                                    a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#ffffff" stroke-width="3"
-                                    stroke-dasharray="60, 100" />
-                                <text x="18" y="20.5" class="percentage">60%</text>
-                            </svg>
-                        </div>
-                        <h4>Certified Kubernetes Security Specialist (CKS)</h4>
-                        <p>Expected completion: August 2025</p>
+            <div class="future-skills">
+                <h3>What's Next</h3>
+                <div class="future-skill-tiles">
+                    <div class="skill-tile">
+                        <span>Cloud Security</span>
+                    </div>
+                    <div class="skill-tile">
+                        <span>Multi-Cloud Networking</span>
+                    </div>
+                    <div class="skill-tile">
+                        <span>Serverless Architectures</span>
+                    </div>
+                    <div class="skill-tile">
+                        <span>Infrastructure as Code</span>
                     </div>
                 </div>
             </div>
