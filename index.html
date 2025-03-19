@@ -49,9 +49,10 @@
             width: 100% !important;
         }
 
-        /* Fix profile image */
+        /* Fix profile image - REDUCED MARGIN BOTTOM */
         .hero-image {
-            margin: 0 auto 60px !important;
+            margin: 0 auto 15px !important;
+            /* Reduced from 60px to 15px */
         }
 
         /* Text content section */
@@ -78,20 +79,46 @@
         /* Compact the profile pic on mobile */
         @media (max-width: 768px) {
             .hero-image {
-                max-width: 180px !important;
-                max-height: 180px !important;
-                margin: 0 auto 50px !important;
-                /* More space after image */
+                max-width: 160px !important;
+                /* Smaller image */
+                max-height: 160px !important;
+                margin: 0 auto 15px !important;
+                /* Less space after image */
             }
 
             .profile-image-container {
-                max-width: 180px !important;
-                max-height: 180px !important;
+                max-width: 160px !important;
+                max-height: 160px !important;
             }
 
             .profile-image {
-                max-width: 160px !important;
-                max-height: 160px !important;
+                max-width: 140px !important;
+                max-height: 140px !important;
+            }
+
+            /* Tighten up spacing for text */
+            .hero-greeting {
+                margin-bottom: 5px !important;
+            }
+
+            .hero-name {
+                margin-bottom: 5px !important;
+                font-size: 32px !important;
+                /* Slightly smaller */
+            }
+
+            .hero-title {
+                margin-bottom: 10px !important;
+            }
+
+            .hero-divider {
+                margin-bottom: 15px !important;
+            }
+
+            /* Reduce spacing for bio text */
+            .hero-description {
+                margin: 15px 0 20px !important;
+                /* Reduced spacing */
             }
 
             /* Button layout for mobile */
@@ -106,14 +133,9 @@
                 width: 100% !important;
                 text-align: center !important;
             }
-
-            /* Extra spacing for text */
-            .hero-description {
-                margin-bottom: 30px !important;
-            }
         }
 
-        /* Desktop layout adjustments */
+        /* Desktop layout adjustments - KEEPING THESE UNCHANGED */
         @media (min-width: 992px) {
             .hero-content {
                 flex-direction: row !important;
@@ -350,26 +372,53 @@
                     heroContent.style.textAlign = 'center';
                 }
 
-                // Fix hero image size
+                // FIX: Reduce the space after the image
                 const heroImage = document.querySelector('.hero-image');
                 if (heroImage) {
-                    heroImage.style.maxWidth = '180px';
-                    heroImage.style.maxHeight = '180px';
-                    heroImage.style.margin = '0 auto 50px';
+                    heroImage.style.maxWidth = '160px';
+                    heroImage.style.maxHeight = '160px';
+                    heroImage.style.margin = '0 auto 15px'; // REDUCED FROM 50px TO 15px
                 }
 
                 // Fix profile container size
                 const profileContainer = document.querySelector('.profile-image-container');
                 if (profileContainer) {
-                    profileContainer.style.maxWidth = '180px';
-                    profileContainer.style.maxHeight = '180px';
+                    profileContainer.style.maxWidth = '160px';
+                    profileContainer.style.maxHeight = '160px';
                 }
 
                 // Fix profile image size
                 const profileImage = document.querySelector('.profile-image');
                 if (profileImage) {
-                    profileImage.style.maxWidth = '160px';
-                    profileImage.style.maxHeight = '160px';
+                    profileImage.style.maxWidth = '140px';
+                    profileImage.style.maxHeight = '140px';
+                }
+
+                // Tighten spacing in text elements
+                const greeting = document.querySelector('.hero-greeting');
+                if (greeting) {
+                    greeting.style.marginBottom = '5px';
+                }
+
+                const name = document.querySelector('.hero-name');
+                if (name) {
+                    name.style.marginBottom = '5px';
+                    name.style.fontSize = '32px';
+                }
+
+                const title = document.querySelector('.hero-title');
+                if (title) {
+                    title.style.marginBottom = '10px';
+                }
+
+                const divider = document.querySelector('.hero-divider');
+                if (divider) {
+                    divider.style.marginBottom = '15px';
+                }
+
+                const description = document.querySelector('.hero-description');
+                if (description) {
+                    description.style.margin = '15px 0 20px';
                 }
 
                 // Force buttons to be stacked
