@@ -1,0 +1,519 @@
+/* Complete Mobile Responsiveness Fixes */
+
+/* ==== NAVIGATION FIXES ==== */
+/* Fix hamburger menu visibility */
+@media (max-width: 768px) {
+    .mobile-toggle {
+        display: block !important;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 1000;
+        position: relative !important;
+    }
+
+    /* Fix nav menu positioning */
+    .nav-links {
+        position: fixed !important;
+        top: 0;
+        right: -300px !important;
+        width: 300px;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.95) !important;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        padding: 50px 0;
+        z-index: 999;
+        transform: none !important;
+        /* Override transform */
+        transition: right 0.3s ease !important;
+    }
+
+    .nav-links.active {
+        right: 0 !important;
+    }
+
+    /* Fix nav container */
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    /* Add background to navbar for better visibility */
+    #navbar {
+        background: rgba(0, 0, 0, 0.8) !important;
+        backdrop-filter: blur(10px);
+        position: fixed !important;
+        width: 100% !important;
+        z-index: 100 !important;
+        top: 0 !important;
+    }
+}
+
+/* Add mobile transition effect */
+.nav-links {
+    transition: right 0.3s ease;
+}
+
+/* Override body overflow when mobile menu is open */
+body.menu-open {
+    overflow: hidden;
+}
+
+/* ==== HERO SECTION FIXES ==== */
+/* Base hero section layout */
+.hero {
+    padding-top: 150px !important;
+    min-height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+    position: relative !important;
+}
+
+/* Profile image container positioning - create more space */
+.profile-image-container {
+    position: relative !important;
+    width: 320px !important;
+    height: 320px !important;
+    margin: 0 auto !important;
+    perspective: 1000px !important;
+}
+
+/* Target the new wrapper for better positioning */
+#profile-image-wrapper {
+    position: relative !important;
+    margin-top: 100px !important;
+    margin-bottom: 60px !important;
+}
+
+/* Fix all hero text margins */
+.hero-text {
+    margin-top: 60px !important;
+}
+
+/* Ensure description text is visible */
+.hero-description {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin: 20px 0 30px 0 !important;
+    max-width: 800px !important;
+    line-height: 1.6 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Fix animation delays for text elements */
+.animated-text,
+.animated-element {
+    animation-delay: 0s !important;
+    animation-duration: 0.5s !important;
+    opacity: 1 !important;
+}
+
+@media (max-width: 1024px) {
+
+    /* Hero section layout for tablets */
+    .hero-content {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 40px !important;
+        padding-top: 50px !important;
+    }
+
+    .hero-image {
+        order: 1 !important;
+    }
+
+    .hero-text {
+        order: 2 !important;
+    }
+
+    .hero-divider {
+        margin: 0 auto 30px !important;
+    }
+
+    .hero-cta {
+        justify-content: center !important;
+    }
+
+    .social-links {
+        justify-content: center !important;
+    }
+
+    /* Center description text */
+    .hero-description {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Hero section layout for mobile */
+    .hero {
+        padding-top: 80px !important;
+        padding-bottom: 50px !important;
+        height: auto !important;
+        min-height: 100vh !important;
+    }
+
+    .hero-content {
+        flex-direction: column !important;
+        gap: 30px !important;
+        justify-content: center !important;
+        padding-top: 100px !important;
+        /* Add more space for the navbar */
+        margin-top: 80px !important;
+    }
+
+    /* Move the profile image down from the top */
+    .hero-image {
+        margin-top: 100px !important;
+        /* Push image down from top navbar */
+        margin-bottom: 20px !important;
+    }
+
+    /* Ensure space between image and text content */
+    #profile-image-wrapper {
+        margin-top: 100px !important;
+        margin-bottom: 60px !important;
+    }
+
+    /* Adjust profile image size */
+    .profile-image-container {
+        width: 260px !important;
+        height: 260px !important;
+    }
+
+    .profile-image {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    /* Text section adjustments */
+    .hero-text {
+        padding-top: 40px !important;
+        /* Add space between image and text */
+        width: 90% !important;
+        /* Limit width on mobile */
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .hero-greeting {
+        margin-top: 20px !important;
+        margin-bottom: 15px !important;
+        font-size: 18px !important;
+        display: block !important;
+    }
+
+    .hero-name {
+        font-size: 36px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 15px !important;
+        display: block !important;
+    }
+
+    .hero-title {
+        font-size: 20px !important;
+        display: block !important;
+        margin-bottom: 15px !important;
+    }
+
+    .hero-divider {
+        display: block !important;
+        width: 60px !important;
+        height: 3px !important;
+        margin: 0 auto 25px !important;
+    }
+
+    /* Ensure description is visible and properly sized */
+    .hero-description {
+        font-size: 16px !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        margin: 0 auto 30px !important;
+        width: 100% !important;
+        max-width: 600px !important;
+    }
+
+    /* Icon size adjustments */
+    .tech-icon {
+        width: 25px !important;
+        height: 25px !important;
+    }
+}
+
+/* Further adjustments for smaller phones */
+@media (max-width: 480px) {
+    .hero {
+        padding-top: 70px !important;
+    }
+
+    .hero-content {
+        padding-top: 80px !important;
+    }
+
+    .hero-image {
+        margin-top: 80px !important;
+    }
+
+    /* Smaller profile image */
+    .profile-image-container {
+        width: 220px !important;
+        height: 220px !important;
+    }
+
+    .profile-image {
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+    /* Smaller text sizes */
+    .hero-greeting {
+        font-size: 16px !important;
+    }
+
+    .hero-name {
+        font-size: 32px !important;
+    }
+
+    .hero-title {
+        font-size: 18px !important;
+    }
+
+    .hero-description {
+        font-size: 16px !important;
+        margin: 0 auto 25px !important;
+        padding: 0 10px !important;
+    }
+
+    /* CTA button layout */
+    .hero-cta {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .btn {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+        text-align: center !important;
+    }
+
+    /* Hide some decorative elements for better performance */
+    .geometric-elements {
+        display: none !important;
+    }
+}
+
+/* ==== GENERAL LAYOUT FIXES ==== */
+/* Make images responsive */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* Fix for 3D transform issues on mobile */
+@media (max-width: 768px) {
+    .btn-3d:hover {
+        transform: none !important;
+    }
+
+    .parallax-tilt {
+        transform: none !important;
+    }
+}
+
+/* Force visibility of hero elements */
+.hero-greeting,
+.hero-name,
+.hero-title,
+.hero-divider,
+.hero-description,
+.hero-cta,
+.social-links {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Ensure proper spacing between elements */
+.hero-divider+.hero-description {
+    margin-top: 25px !important;
+}
+
+.hero-description+.hero-cta {
+    margin-top: 30px !important;
+}
+
+/* Comprehensive Desktop and Mobile Layout Fixes */
+
+/* ==== DESKTOP LAYOUT FIXES ==== */
+/* Fix desktop layout to ensure proper side-by-side display */
+.hero-content {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    gap: 50px !important;
+}
+
+/* Desktop profile image positioning */
+.hero-image {
+    flex: 1 !important;
+    order: 1 !important;
+    /* Keep profile image on the left */
+    display: flex !important;
+    justify-content: center !important;
+}
+
+/* Desktop text content positioning */
+.hero-text {
+    flex: 1 !important;
+    order: 2 !important;
+    /* Keep text on the right */
+    text-align: left !important;
+}
+
+/* Desktop specific margins and alignments */
+@media (min-width: 1025px) {
+    .hero-divider {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+    }
+
+    .hero-greeting,
+    .hero-name,
+    .hero-title,
+    .hero-description {
+        text-align: left !important;
+    }
+
+    .hero-cta {
+        justify-content: flex-start !important;
+    }
+
+    .social-links {
+        justify-content: flex-start !important;
+    }
+
+    #profile-image-wrapper {
+        margin-top: 0 !important;
+    }
+}
+
+/* ==== RESPONSIVE LAYOUT TRANSITION ==== */
+/* Tablet layout adjustments */
+@media (max-width: 1024px) {
+    .hero-content {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .hero-image {
+        order: 1 !important;
+    }
+
+    .hero-text {
+        order: 2 !important;
+        text-align: center !important;
+    }
+
+    .hero-divider {
+        margin: 0 auto 30px !important;
+    }
+
+    .hero-cta {
+        justify-content: center !important;
+    }
+
+    .social-links {
+        justify-content: center !important;
+    }
+
+    /* Ensure description is visible on tablet */
+    .hero-description {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        text-align: center !important;
+        margin: 0 auto 30px !important;
+    }
+}
+
+/* ==== MOBILE SPECIFIC FIXES ==== */
+@media (max-width: 768px) {
+
+    /* Ensure hero description is visible and properly styled on mobile */
+    .hero-description {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        margin: 20px auto 30px !important;
+        padding: 0 15px !important;
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        color: #e0e0e0 !important;
+        text-align: center !important;
+        max-width: 600px !important;
+    }
+
+    /* Force visibility of all hero elements on smaller screens */
+    .hero-greeting,
+    .hero-name,
+    .hero-title,
+    .hero-divider,
+    .hero-cta,
+    .social-links {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    /* Fix animation delays for all text elements */
+    .animated-text,
+    .animated-element {
+        animation-delay: 0s !important;
+        animation-duration: 0.5s !important;
+        opacity: 1 !important;
+    }
+}
+
+/* ==== OVERRIDE ENHANCED ANIMATIONS FOR BETTER STABILITY ==== */
+/* Fix animations to ensure content is visible */
+.animated-text {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.fadeUp {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Fix specific spacing issues between elements */
+.hero-divider+.hero-description {
+    margin-top: 25px !important;
+}
+
+.hero-description+.hero-cta {
+    margin-top: 30px !important;
+}
+
+/* Add important debugging outline */
+.hero-description {
+    position: relative !important;
+    z-index: 10 !important;
+    /* Uncomment for debugging
+    outline: 2px solid yellow !important; 
+    */
+}

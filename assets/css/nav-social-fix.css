@@ -1,0 +1,123 @@
+/* ===== FIX FOR NAVIGATION OVERLAP AND SOCIAL BUTTONS ===== */
+
+/* Fix navigation at the top */
+#navbar {
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 100 !important;
+    top: 0 !important;
+    background: rgba(0, 0, 0, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    padding: 15px 0 !important;
+}
+
+.nav-container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    position: relative !important;
+    padding: 0 20px !important;
+}
+
+.logo,
+.logo-text {
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+}
+
+/* Fix social buttons at the bottom */
+.social-links {
+    display: flex !important;
+    gap: 15px !important;
+    margin-top: 25px !important;
+    justify-content: center !important;
+}
+
+.social-link {
+    width: 44px !important;
+    height: 44px !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(5px) !important;
+}
+
+.social-icon-container {
+    width: 24px !important;
+    height: 24px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.social-icon {
+    width: 20px !important;
+    height: 20px !important;
+    fill: #ffffff !important;
+}
+
+/* Fix hero section spacing for mobile */
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 80px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .hero-content {
+        margin-top: 0 !important;
+        padding-top: 20px !important;
+    }
+
+    .hero-text {
+        margin-top: 20px !important;
+    }
+
+    /* Center social links on mobile and give more space */
+    .social-links {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+        justify-content: center !important;
+        padding-bottom: 20px !important;
+    }
+
+    /* Make social buttons larger on mobile for better tap targets */
+    .social-link {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .social-icon {
+        width: 24px !important;
+        height: 24px !important;
+    }
+
+    /* Fix vertical spacing for buttons */
+    .hero-cta {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 15px !important;
+    }
+
+    .hero-cta a {
+        width: 100% !important;
+        text-align: center !important;
+    }
+}
+
+/* Extra fix for very small screens */
+@media (max-width: 380px) {
+
+    .logo,
+    .logo-text {
+        font-size: 16px !important;
+    }
+
+    .mobile-toggle {
+        padding: 0 !important;
+    }
+}

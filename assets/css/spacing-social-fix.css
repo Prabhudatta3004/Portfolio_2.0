@@ -1,0 +1,94 @@
+/* Fix spacing between profile and text + social buttons */
+
+/* Reduce top padding of hero section */
+.hero {
+    padding-top: 120px !important;
+    /* Reduced from 180px */
+}
+
+/* Fix layout for hero content */
+.hero-content {
+    display: flex !important;
+    flex-direction: column !important;
+    /* Stack vertically on mobile */
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+/* Adjust profile image */
+.hero-image {
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+}
+
+/* Adjust spacing for text content */
+.hero-text {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* Fix social buttons - horizontal layout */
+.social-links {
+    display: flex !important;
+    flex-direction: row !important;
+    /* Force horizontal layout */
+    gap: 20px !important;
+    justify-content: center !important;
+    margin-top: 25px !important;
+}
+
+.social-link {
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Desktop layout adjustments */
+@media (min-width: 992px) {
+    .hero-content {
+        flex-direction: row !important;
+        /* Side by side on desktop */
+        text-align: left !important;
+        align-items: center !important;
+        gap: 50px !important;
+    }
+
+    .hero-image {
+        flex: 1 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .hero-text {
+        flex: 1 !important;
+        text-align: left !important;
+    }
+
+    .hero-divider {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+    }
+
+    .social-links {
+        justify-content: flex-start !important;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 100px !important;
+    }
+
+    /* Ensure buttons are full width on mobile */
+    .hero-cta {
+        width: 100% !important;
+    }
+
+    .hero-cta a {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    }
+}

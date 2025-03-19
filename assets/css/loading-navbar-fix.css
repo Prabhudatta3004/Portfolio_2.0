@@ -1,0 +1,114 @@
+/* Loading and Navbar Overlap Fix */
+
+/* Hide navbar during loading */
+#navbar {
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 100 !important;
+    top: 0 !important;
+    background: rgba(0, 0, 0, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    padding: 15px 0 !important;
+    transition: opacity 0.5s ease !important;
+}
+
+/* Hide navbar when loader is active */
+body.loading #navbar {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* Ensure loader is on top of everything */
+#loader {
+    position: fixed !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: var(--primary, #000) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 9999 !important;
+    /* Higher than anything else */
+    transition: opacity 0.5s ease, visibility 0.5s ease !important;
+}
+
+/* Fix hero spacing to prevent image overlap */
+.hero {
+    padding-top: 180px !important;
+    /* Much more space at the top */
+    margin-top: 0 !important;
+}
+
+/* Fix profile image positioning */
+.hero-image {
+    margin-top: 20px !important;
+}
+
+.profile-image-container {
+    position: relative !important;
+    z-index: 10 !important;
+    width: 300px !important;
+    height: 300px !important;
+    margin: 0 auto !important;
+}
+
+.profile-image {
+    width: 280px !important;
+    height: 280px !important;
+    margin: 0 auto !important;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .hero {
+        padding-top: 160px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        padding-top: 140px !important;
+    }
+
+    .profile-image-container {
+        width: 260px !important;
+        height: 260px !important;
+    }
+
+    .profile-image {
+        width: 240px !important;
+        height: 240px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 120px !important;
+    }
+
+    .profile-image-container {
+        width: 240px !important;
+        height: 240px !important;
+    }
+
+    .profile-image {
+        width: 220px !important;
+        height: 220px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding-top: 100px !important;
+    }
+
+    .profile-image-container {
+        width: 220px !important;
+        height: 220px !important;
+    }
+
+    .profile-image {
+        width: 200px !important;
+        height: 200px !important;
+    }
+}

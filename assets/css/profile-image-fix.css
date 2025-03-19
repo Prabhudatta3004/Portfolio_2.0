@@ -1,0 +1,89 @@
+/* Profile Image Overlap Fix */
+
+/* Ensure proper spacing for navbar */
+#navbar {
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+    /* Higher z-index to ensure it's on top */
+    top: 0 !important;
+    background: rgba(0, 0, 0, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    padding: 15px 0 !important;
+}
+
+/* Increase spacing for hero section to prevent overlap */
+.hero {
+    padding-top: 120px !important;
+    /* More space at the top */
+    margin-top: 0 !important;
+}
+
+/* Fix profile image positioning */
+.hero-image {
+    margin-top: 40px !important;
+    /* Push the image down */
+    position: relative !important;
+    z-index: 10 !important;
+    /* Lower z-index than navbar */
+}
+
+.profile-image-container {
+    margin-top: 60px !important;
+    /* Additional top margin */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .hero {
+        padding-top: 150px !important;
+        /* Even more space on smaller screens */
+    }
+
+    .profile-image-container {
+        margin-top: 40px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        padding-top: 130px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 100px !important;
+    }
+
+    .hero-image {
+        margin-top: 30px !important;
+    }
+
+    .profile-image-container {
+        width: 260px !important;
+        height: 260px !important;
+        margin: 20px auto 40px !important;
+    }
+
+    .profile-image {
+        width: 240px !important;
+        height: 240px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding-top: 80px !important;
+    }
+
+    .profile-image-container {
+        width: 220px !important;
+        height: 220px !important;
+    }
+
+    .profile-image {
+        width: 200px !important;
+        height: 200px !important;
+    }
+}

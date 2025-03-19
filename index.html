@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="assets/css/cosmic.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/enhanced-animations.css">
+    <link rel="stylesheet" href="assets/css/mobile-fixes.css">
+    <!-- Critical fixes -->
+    <link rel="stylesheet" href="assets/css/loading-navbar-fix.css">
+    <link rel="stylesheet" href="assets/css/spacing-social-fix.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
@@ -16,7 +20,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body class="loading">
     <!-- 3D Particle Universe Background -->
     <div id="particle-universe" class="particle-universe"></div>
 
@@ -60,7 +64,7 @@
         </div>
     </div>
 
-    <!-- Interactive Navigation - Removed hamburger -->
+    <!-- Interactive Navigation -->
     <nav id="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">
@@ -75,41 +79,59 @@
                 <li><a href="certifications.html" class="nav-hover-effect">Certifications</a></li>
                 <li><a href="contact.html" class="nav-hover-effect">Contact</a></li>
             </ul>
+            <button class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
         </div>
     </nav>
 
-    <!-- Enhanced Hero Section -->
+    <!-- Enhanced Hero Section with fixed layout for desktop and mobile -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
+                <!-- Profile Image - Left on desktop, top on mobile -->
                 <div class="hero-image">
-                    <div class="profile-image-container">
-                        <div class="profile-image parallax-tilt">
-                            <img src="assets/img/Profile.jpg" alt="Prabhudatta Mishra">
-                            <div class="profile-image-glow"></div>
-                        </div>
-                        <div class="profile-orbs">
-                            <div class="orb orb1"></div>
-                            <div class="orb orb2"></div>
-                            <div class="orb orb3"></div>
-                        </div>
-                        <div class="tech-icons">
-                            <div class="tech-icon" data-icon="kubernetes"></div>
-                            <div class="tech-icon" data-icon="aws"></div>
-                            <div class="tech-icon" data-icon="azure"></div>
-                            <div class="tech-icon" data-icon="gcp"></div>
-                            <div class="tech-icon" data-icon="terraform"></div>
+                    <div id="profile-image-wrapper">
+                        <div class="profile-image-container">
+                            <div class="profile-image parallax-tilt">
+                                <img src="assets/img/Profile.jpg" alt="Prabhudatta Mishra">
+                                <div class="profile-image-glow"></div>
+                            </div>
+                            <div class="profile-orbs">
+                                <div class="orb orb1"></div>
+                                <div class="orb orb2"></div>
+                                <div class="orb orb3"></div>
+                            </div>
+                            <div class="tech-icons">
+                                <div class="tech-icon" data-icon="kubernetes"></div>
+                                <div class="tech-icon" data-icon="aws"></div>
+                                <div class="tech-icon" data-icon="azure"></div>
+                                <div class="tech-icon" data-icon="gcp"></div>
+                                <div class="tech-icon" data-icon="terraform"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Text Content - Right on desktop, bottom on mobile -->
                 <div class="hero-text">
                     <div class="hero-greeting animated-text">HELLO, I'M</div>
                     <h1 class="hero-name animated-text">PRABHUDATTA MISHRA</h1>
                     <div class="hero-title animated-text">CLOUD ENGINEER</div>
                     <div class="hero-divider animated-element"></div>
-                    <p class="hero-description animated-text">I'm a solutions-driven engineer specializing in
+
+                    <!-- Bio paragraph -->
+                    <p class="hero-description animated-text">
+                        I'm a solutions-driven engineer specializing in
                         multi-cloud Kubernetes architectures, distributed systems, and fault-tolerant applications. With
-                        expertise in AWS, Azure, and GCP, I design scalable systems that solve complex problems.</p>
+                        expertise in AWS, Azure, and GCP, I design scalable systems that solve complex problems.
+                    </p>
+
                     <div class="hero-cta animated-element">
                         <a href="projects.html" class="btn btn-3d">
                             <span>VIEW PROJECTS</span>
@@ -120,6 +142,8 @@
                             <div class="btn-background"></div>
                         </a>
                     </div>
+
+                    <!-- Fixed horizontal social links -->
                     <div class="social-links animated-element">
                         <a href="https://github.com/Prabhudatta3004" class="social-link social-3d" target="_blank"
                             rel="noopener noreferrer">
@@ -143,13 +167,15 @@
                 </div>
             </div>
         </div>
-
     </section>
 
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/enhanced-animations.js"></script>
+    <script src="assets/js/loading-overlap-fix.js"></script>
+    <script src="assets/js/layout-adjustment-js.js"></script>
 </body>
 
 </html>
