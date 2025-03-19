@@ -14,6 +14,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .in-prod {
+            color: #00cc00;
+            /* Bright green shade for "In Prod" */
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .in-prod svg {
+            margin-right: 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -75,76 +88,99 @@
                 <div class="project-card" data-category="cloud">
                     <div class="project-front">
                         <div class="project-tag">Cloud</div>
-                        <h3>Multi-Cloud Kubernetes Clusters</h3>
-                        <p>Designed and managed Kubernetes clusters across AWS, Azure, and GCP for machine learning and
-                            computer vision applications.</p>
+                        <h3>Infrastructure as a Service</h3>
+                        <p>Implemented an Infrastructure-as-a-Service solution for scalable resource provisioning and
+                            management in the cloud.</p>
+                        <div class="project-technologies">
+                            <span>Cloud Computing</span>
+                            <span>IaaS</span>
+                            <span>Virtualization</span>
+                        </div>
+                        <a href="https://github.com/Prabhudatta3004/Infrastructure-as-a-Service" class="project-link"
+                            target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="cloud">
+                    <div class="project-front">
+                        <div class="project-tag">Cloud</div>
+                        <h3>Hybrid Load Balancer</h3>
+                        <p>Developed a hybrid load balancer for efficient traffic distribution across cloud resources,
+                            enhancing scalability and reliability.</p>
+                        <div class="project-technologies">
+                            <span>Golang</span>
+                            <span>Load Balancing</span>
+                            <span>Cloud Infrastructure</span>
+                        </div>
+                        <a href="https://github.com/Distributed-Systems-KP/Dynamic_Load_Balancer" class="project-link"
+                            target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="cloud">
+                    <div class="project-front">
+                        <div class="project-tag">Cloud</div>
+                        <h3>Client-Server Socket Setup</h3>
+                        <p>Built a client-server socket system for real-time communication in cloud-based auction
+                            applications.</p>
+                        <div class="project-technologies">
+                            <span>Socket Programming</span>
+                            <span>Cloud Networking</span>
+                            <span>Real-Time Systems</span>
+                        </div>
+                        <a href="https://github.com/Distributed-Systems-KP/Auction_Socket_Programming"
+                            class="project-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="cloud">
+                    <div class="project-front">
+                        <div class="project-tag">Cloud</div>
+                        <h3>Alfred: Hybrid Cloud K8s Butler</h3>
+                        <p>Unleashed Alfred, a sophisticated Kubernetes orchestrator that governs hybrid cloud realms
+                            with finesse, optimizing workloads across public and private skies like a cosmic butler.</p>
                         <div class="project-technologies">
                             <span>Kubernetes</span>
-                            <span>Terraform</span>
-                            <span>AWS</span>
-                            <span>Azure</span>
-                            <span>GCP</span>
+                            <span>Hybrid Cloud</span>
+                            <span>Workload Optimization</span>
+                            <span>Automation</span>
                         </div>
-                        <a href="https://github.com/" class="project-link" target="_blank">
+                        <span class="in-prod">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                fill="none" stroke="#00cc00" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
-                                <path
-                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                </path>
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
                             </svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="cloud">
-                    <div class="project-front">
-                        <div class="project-tag">Cloud</div>
-                        <h3>Profile Recommender System</h3>
-                        <p>Orchestrated the deployment of a scalable profile recommender system on AWS and DigitalOcean,
-                            achieving a 44% increase in hiring match accuracy.</p>
-                        <div class="project-technologies">
-                            <span>AWS</span>
-                            <span>DigitalOcean</span>
-                            <span>Docker</span>
-                            <span>Microservices</span>
-                        </div>
-                        <a href="https://github.com/" class="project-link" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path
-                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                </path>
-                            </svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="cloud">
-                    <div class="project-front">
-                        <div class="project-tag">Cloud</div>
-                        <h3>Multipurpose Academic Chatbot</h3>
-                        <p>Designed and deployed a multipurpose chatbot on AWS for 24/7 academic support, reducing
-                            response times by 50% and boosting user engagement.</p>
-                        <div class="project-technologies">
-                            <span>AWS Lambda</span>
-                            <span>Amazon Lex</span>
-                            <span>DynamoDB</span>
-                            <span>NLP</span>
-                        </div>
-                        <a href="https://github.com/" class="project-link" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path
-                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                </path>
-                            </svg>
-                            View on GitHub
-                        </a>
+                            In Prod
+                        </span>
                     </div>
                 </div>
 
@@ -152,15 +188,16 @@
                 <div class="project-card" data-category="os">
                     <div class="project-front">
                         <div class="project-tag">Operating Systems</div>
-                        <h3>Hybrid Load Balancer</h3>
-                        <p>Constructed a hybrid Layer 4/Layer 7 load balancer in Golang with dynamic traffic management
-                            and high fault tolerance.</p>
+                        <h3>Reader/Writer Locks</h3>
+                        <p>Implemented reader/writer locks to manage concurrent access to shared resources efficiently
+                            in an operating system.</p>
                         <div class="project-technologies">
-                            <span>Golang</span>
-                            <span>Traffic Management</span>
-                            <span>Fault Tolerance</span>
+                            <span>C</span>
+                            <span>Concurrency</span>
+                            <span>Synchronization</span>
                         </div>
-                        <a href="https://github.com/" class="project-link" target="_blank">
+                        <a href="https://github.com/Prabhudatta3004/READ-WRITE-LOCKS" class="project-link"
+                            target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -219,6 +256,30 @@
                             </svg>
                             View on GitHub
                         </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="os">
+                    <div class="project-front">
+                        <div class="project-tag">Operating Systems</div>
+                        <h3>Demand Paging and Memory Management</h3>
+                        <p>Engineered a demand paging system with advanced memory management to optimize virtual memory
+                            usage and reduce overhead in real-time OS environments.</p>
+                        <div class="project-technologies">
+                            <span>C</span>
+                            <span>Virtual Memory</span>
+                            <span>Paging</span>
+                            <span>OS Optimization</span>
+                        </div>
+                        <span class="in-prod">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="#00cc00" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            In Prod
+                        </span>
                     </div>
                 </div>
 
@@ -292,6 +353,128 @@
                             </svg>
                             View on GitHub
                         </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="distributed">
+                    <div class="project-front">
+                        <div class="project-tag">Distributed Systems</div>
+                        <h3>Dead Letter Queues (DLQ)</h3>
+                        <p>Designed a Dead Letter Queue system to handle message failures in distributed systems,
+                            ensuring reliable processing.</p>
+                        <div class="project-technologies">
+                            <span>Messaging</span>
+                            <span>Fault Tolerance</span>
+                            <span>Distributed Queues</span>
+                        </div>
+                        <a href="https://github.com/Prabhudatta3004/DLQ" class="project-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="distributed">
+                    <div class="project-front">
+                        <div class="project-tag">Distributed Systems</div>
+                        <h3>Distributed Hashing Table (ADT)</h3>
+                        <p>Built a distributed hashing table for efficient data storage and retrieval across multiple
+                            nodes in a distributed system.</p>
+                        <div class="project-technologies">
+                            <span>Distributed Storage</span>
+                            <span>Hashing</span>
+                            <span>Scalability</span>
+                        </div>
+                        <a href="https://github.com/Prabhudatta3004/ADT" class="project-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="distributed">
+                    <div class="project-front">
+                        <div class="project-tag">Distributed Systems</div>
+                        <h3>P2P File Sharing System</h3>
+                        <p>Created a peer-to-peer file sharing system for decentralized data exchange across nodes in a
+                            distributed network.</p>
+                        <div class="project-technologies">
+                            <span>P2P Networking</span>
+                            <span>Distributed Systems</span>
+                            <span>File Sharing</span>
+                        </div>
+                        <a href="https://github.com/Distributed-Systems-KP/P2P_File_Sharing" class="project-link"
+                            target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="distributed">
+                    <div class="project-front">
+                        <div class="project-tag">Distributed Systems</div>
+                        <h3>Publish-Subscribe System</h3>
+                        <p>Implemented a distributed publish-subscribe system for efficient message dissemination across
+                            multiple nodes.</p>
+                        <div class="project-technologies">
+                            <span>Pub-Sub</span>
+                            <span>Distributed Messaging</span>
+                            <span>Scalability</span>
+                        </div>
+                        <a href="https://github.com/Distributed-Systems-KP/Pub-Sub-System" class="project-link"
+                            target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="distributed">
+                    <div class="project-front">
+                        <div class="project-tag">Distributed Systems</div>
+                        <h3>Horcrux: Language Model Autoscaler</h3>
+                        <p>Deployed Horcrux, a hybrid autoscaler driven by a language model, empowering users to dictate
+                            multi-cloud scaling strategies with magical precision.</p>
+                        <div class="project-technologies">
+                            <span>Language Models</span>
+                            <span>Autoscaling</span>
+                            <span>Multi-Cloud</span>
+                            <span>AI-Driven</span>
+                        </div>
+                        <span class="in-prod">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="#00cc00" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            In Prod
+                        </span>
                     </div>
                 </div>
             </div>
