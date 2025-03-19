@@ -1,0 +1,176 @@
+/* Mobile-specific layout fix */
+
+/* General layout for mobile */
+@media (max-width: 768px) {
+
+    /* Fix hero section positioning */
+    .hero {
+        padding-top: 80px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        min-height: 100vh !important;
+    }
+
+    /* Clear all margins and paddings and start fresh */
+    .hero-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        text-align: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        gap: 0 !important;
+        width: 100% !important;
+    }
+
+    /* Profile image adjustments - make container smaller */
+    .hero-image {
+        margin: 0 auto 60px !important;
+        /* Add bottom margin after image */
+        width: 200px !important;
+        height: 200px !important;
+        padding: 0 !important;
+    }
+
+    #profile-image-wrapper {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .profile-image-container {
+        width: 200px !important;
+        height: 200px !important;
+        margin: 0 auto !important;
+    }
+
+    .profile-image {
+        width: 180px !important;
+        height: 180px !important;
+    }
+
+    /* Text content section - ensure it displays below the image */
+    .hero-text {
+        margin-top: 0 !important;
+        margin-bottom: 50px !important;
+        padding: 0 15px !important;
+        width: 100% !important;
+        position: relative !important;
+        z-index: 20 !important;
+        /* Higher z-index than the image */
+    }
+
+    /* "Hello, I'm" text */
+    .hero-greeting {
+        margin-top: 0 !important;
+        margin-bottom: 10px !important;
+        font-size: 16px !important;
+    }
+
+    /* Main name heading */
+    .hero-name {
+        font-size: 36px !important;
+        margin-bottom: 10px !important;
+        line-height: 1.2 !important;
+    }
+
+    /* Job title */
+    .hero-title {
+        font-size: 20px !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* Bio text */
+    .hero-description {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        margin: 20px 0 30px !important;
+    }
+
+    /* Buttons layout */
+    .hero-cta {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 15px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .hero-cta a {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    /* Social links */
+    .social-links {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 20px !important;
+        margin: 0 auto 30px !important;
+    }
+
+    /* For very small screens */
+    @media (max-width: 380px) {
+        .hero-image {
+            width: 180px !important;
+            height: 180px !important;
+            margin-bottom: 50px !important;
+        }
+
+        .profile-image-container {
+            width: 180px !important;
+            height: 180px !important;
+        }
+
+        .profile-image {
+            width: 160px !important;
+            height: 160px !important;
+        }
+
+        .hero-name {
+            font-size: 32px !important;
+        }
+
+        .hero-title {
+            font-size: 18px !important;
+        }
+
+        .hero-description {
+            font-size: 15px !important;
+        }
+    }
+}
+
+/* Desktop layout */
+@media (min-width: 769px) {
+    .hero {
+        padding-top: 100px !important;
+    }
+
+    .hero-content {
+        flex-direction: row !important;
+        align-items: center !important;
+        text-align: left !important;
+        gap: 50px !important;
+    }
+
+    .hero-image {
+        flex: 1;
+        margin-bottom: 0 !important;
+    }
+
+    .hero-text {
+        flex: 1;
+        text-align: left !important;
+    }
+
+    .hero-divider {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+    }
+
+    .social-links {
+        justify-content: flex-start !important;
+    }
+}

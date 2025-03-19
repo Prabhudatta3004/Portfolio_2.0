@@ -10,14 +10,152 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/enhanced-animations.css">
     <link rel="stylesheet" href="assets/css/mobile-fixes.css">
-    <!-- Critical fixes -->
-    <link rel="stylesheet" href="assets/css/loading-navbar-fix.css">
-    <link rel="stylesheet" href="assets/css/spacing-social-fix.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Fix for scrolling and layout issues -->
+    <style>
+        /* Force page to be scrollable */
+        html,
+        body {
+            height: auto !important;
+            overflow-y: auto !important;
+            min-height: 100% !important;
+            overflow-x: hidden !important;
+        }
+
+        /* Fix hero section */
+        .hero {
+            min-height: auto !important;
+            height: auto !important;
+            padding-bottom: 150px !important;
+            /* Extra space at bottom */
+            padding-top: 80px !important;
+        }
+
+        /* Keep background fixed */
+        .cosmic-bg {
+            position: fixed !important;
+            height: 100% !important;
+        }
+
+        /* Fix layout for hero content */
+        .hero-content {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            width: 100% !important;
+        }
+
+        /* Fix profile image */
+        .hero-image {
+            margin: 0 auto 60px !important;
+        }
+
+        /* Text content section */
+        .hero-text {
+            width: 100% !important;
+            text-align: center !important;
+            padding: 0 15px !important;
+        }
+
+        /* Center divider */
+        .hero-divider {
+            margin: 0 auto 25px !important;
+        }
+
+        /* Fix social buttons - horizontal layout */
+        .social-links {
+            display: flex !important;
+            flex-direction: row !important;
+            gap: 20px !important;
+            justify-content: center !important;
+            margin: 25px auto !important;
+        }
+
+        /* Compact the profile pic on mobile */
+        @media (max-width: 768px) {
+            .hero-image {
+                max-width: 180px !important;
+                max-height: 180px !important;
+                margin: 0 auto 50px !important;
+                /* More space after image */
+            }
+
+            .profile-image-container {
+                max-width: 180px !important;
+                max-height: 180px !important;
+            }
+
+            .profile-image {
+                max-width: 160px !important;
+                max-height: 160px !important;
+            }
+
+            /* Button layout for mobile */
+            .hero-cta {
+                display: flex !important;
+                flex-direction: column !important;
+                width: 100% !important;
+                gap: 15px !important;
+            }
+
+            .hero-cta a {
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            /* Extra spacing for text */
+            .hero-description {
+                margin-bottom: 30px !important;
+            }
+        }
+
+        /* Desktop layout adjustments */
+        @media (min-width: 992px) {
+            .hero-content {
+                flex-direction: row !important;
+                text-align: left !important;
+                align-items: center !important;
+                gap: 50px !important;
+            }
+
+            .hero-image {
+                flex: 1 !important;
+                margin-bottom: 0 !important;
+            }
+
+            .hero-text {
+                flex: 1 !important;
+                text-align: left !important;
+            }
+
+            .hero-divider {
+                margin-left: 0 !important;
+                margin-right: auto !important;
+            }
+
+            .social-links {
+                justify-content: flex-start !important;
+            }
+        }
+
+        /* Fix loader */
+        #loader {
+            position: fixed !important;
+            width: 100% !important;
+            height: 100% !important;
+            z-index: 9999 !important;
+        }
+
+        /* Hide navbar during loading */
+        body.loading #navbar {
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
+    </style>
 </head>
 
 <body class="loading">
@@ -174,8 +312,88 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/enhanced-animations.js"></script>
-    <script src="assets/js/loading-overlap-fix.js"></script>
-    <script src="assets/js/layout-adjustment-js.js"></script>
+    <!-- Scrolling Fix Script -->
+    <script>
+        // Fix scrolling issues and loading
+        document.addEventListener('DOMContentLoaded', function () {
+            // Force scrollable
+            document.documentElement.style.height = 'auto';
+            document.documentElement.style.overflowY = 'auto';
+            document.body.style.height = 'auto';
+            document.body.style.overflowY = 'auto';
+
+            // Loading handler
+            setTimeout(function () {
+                const loader = document.getElementById('loader');
+                if (loader) {
+                    loader.style.opacity = '0';
+                    setTimeout(function () {
+                        loader.style.visibility = 'hidden';
+                        document.body.classList.remove('loading');
+
+                        // Show navbar after loading
+                        const navbar = document.getElementById('navbar');
+                        if (navbar) {
+                            navbar.style.opacity = '1';
+                            navbar.style.pointerEvents = 'auto';
+                        }
+                    }, 500);
+                }
+            }, 3000);
+
+            // Mobile-specific fixes
+            if (window.innerWidth <= 768) {
+                // Force mobile layout
+                const heroContent = document.querySelector('.hero-content');
+                if (heroContent) {
+                    heroContent.style.flexDirection = 'column';
+                    heroContent.style.textAlign = 'center';
+                }
+
+                // Fix hero image size
+                const heroImage = document.querySelector('.hero-image');
+                if (heroImage) {
+                    heroImage.style.maxWidth = '180px';
+                    heroImage.style.maxHeight = '180px';
+                    heroImage.style.margin = '0 auto 50px';
+                }
+
+                // Fix profile container size
+                const profileContainer = document.querySelector('.profile-image-container');
+                if (profileContainer) {
+                    profileContainer.style.maxWidth = '180px';
+                    profileContainer.style.maxHeight = '180px';
+                }
+
+                // Fix profile image size
+                const profileImage = document.querySelector('.profile-image');
+                if (profileImage) {
+                    profileImage.style.maxWidth = '160px';
+                    profileImage.style.maxHeight = '160px';
+                }
+
+                // Force buttons to be stacked
+                const heroCta = document.querySelector('.hero-cta');
+                if (heroCta) {
+                    heroCta.style.flexDirection = 'column';
+                    heroCta.style.width = '100%';
+                    heroCta.style.gap = '15px';
+
+                    const buttons = heroCta.querySelectorAll('a');
+                    buttons.forEach(btn => {
+                        btn.style.width = '100%';
+                        btn.style.textAlign = 'center';
+                    });
+                }
+            }
+
+            // Add extra space at bottom for scrolling
+            const extraSpace = document.createElement('div');
+            extraSpace.style.height = '100px';
+            extraSpace.style.width = '100%';
+            document.body.appendChild(extraSpace);
+        });
+    </script>
 </body>
 
 </html>
