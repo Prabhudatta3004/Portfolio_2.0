@@ -186,6 +186,36 @@
     transition: var(--transition);
 }
 
+/* Success Message */
+.success-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.success-message svg {
+    stroke: var(--secondary);
+    margin-bottom: 20px;
+}
+
+.success-message h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.success-message p {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-bottom: 25px;
+}
+
+.success-message .submit-btn {
+    padding: 12px 20px;
+}
+
 /* Animations */
 @keyframes fadeUp {
     from {

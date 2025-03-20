@@ -15,16 +15,70 @@
         rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
-        .in-prod {
-            color: #00cc00;
-            /* Bright green shade for "In Prod" */
+        .in-dev {
+            color: #ff9900;
+            /* Orange for "In Dev" */
             font-weight: bold;
             display: inline-flex;
             align-items: center;
         }
 
-        .in-prod svg {
+        .testing {
+            color: #ff00ff;
+            /* Magenta for "Testing" */
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .ready-for-prod {
+            color: #00cc00;
+            /* Green for "Ready for Prod" */
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .in-dev svg,
+        .testing svg,
+        .ready-for-prod svg {
             margin-right: 5px;
+        }
+
+        /* Styling for filter buttons */
+        .project-filters {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .filter-btn {
+            background-color: #2a2a3a;
+            /* Dark background for inactive buttons */
+            color: #ffffff;
+            /* White text for inactive buttons */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .filter-btn:hover {
+            background-color: #3a3a4a;
+            /* Slightly lighter on hover */
+        }
+
+        .filter-btn.active {
+            background-color: #ffffff;
+            /* White background for active button */
+            color: #000000;
+            /* Black text for active button */
+            font-weight: 600;
         }
     </style>
 </head>
@@ -172,14 +226,14 @@
                             <span>Workload Optimization</span>
                             <span>Automation</span>
                         </div>
-                        <span class="in-prod">
+                        <span class="in-dev">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="#00cc00" stroke-width="2" stroke-linecap="round"
+                                fill="none" stroke="#ff9900" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
                                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                                 <polyline points="22 4 12 14.01 9 11.01"></polyline>
                             </svg>
-                            In Prod
+                            In Dev
                         </span>
                     </div>
                 </div>
@@ -271,14 +325,14 @@
                             <span>Paging</span>
                             <span>OS Optimization</span>
                         </div>
-                        <span class="in-prod">
+                        <span class="testing">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="#00cc00" stroke-width="2" stroke-linecap="round"
+                                fill="none" stroke="#ff00ff" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
                                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                                 <polyline points="22 4 12 14.01 9 11.01"></polyline>
                             </svg>
-                            In Prod
+                            Testing
                         </span>
                     </div>
                 </div>
@@ -466,14 +520,14 @@
                             <span>Multi-Cloud</span>
                             <span>AI-Driven</span>
                         </div>
-                        <span class="in-prod">
+                        <span class="ready-for-prod">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="#00cc00" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
                                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                                 <polyline points="22 4 12 14.01 9 11.01"></polyline>
                             </svg>
-                            In Prod
+                            Ready for Prod
                         </span>
                     </div>
                 </div>

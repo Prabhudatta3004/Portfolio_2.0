@@ -30,7 +30,6 @@
             <div class="cosmic-ring ring-3"></div>
         </div>
     </div>
-
     <!-- Navigation -->
     <nav id="navbar">
         <div class="container nav-container">
@@ -53,7 +52,6 @@
             </button>
         </div>
     </nav>
-
     <!-- Contact Section -->
     <section class="section contact-section">
         <div class="container">
@@ -62,7 +60,6 @@
                 <div class="section-divider"></div>
                 <p class="section-subtitle">Let's connect and discuss opportunities</p>
             </div>
-
             <div class="contact-wrapper">
                 <div class="contact-info">
                     <div class="contact-card">
@@ -80,7 +77,6 @@
                             <p><a href="mailto:pmishra4@ncsu.edu">pmishra4@ncsu.edu</a></p>
                         </div>
                     </div>
-
                     <div class="contact-card">
                         <div class="contact-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -95,7 +91,6 @@
                             <p>Raleigh, North Carolina</p>
                         </div>
                     </div>
-
                     <div class="contact-card">
                         <div class="contact-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -145,7 +140,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="contact-form-container">
                     <form id="contact-form" class="contact-form">
                         <div class="form-row">
@@ -180,14 +174,63 @@
             </div>
         </div>
     </section>
-
     <script src="assets/js/main.js"></script>
     <script>
         // Contact form submission
         document.getElementById('contact-form').addEventListener('submit', function (e) {
             e.preventDefault();
-            alert('Thank you for your message! This is a demo form. In a real implementation, your message would be sent.');
-            this.reset();
+
+            // Show loading state
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalContent = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<span>Sending...</span>';
+            submitBtn.disabled = true;
+
+            // Collect form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+
+            // Send the form data to our API route
+            fetch('/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        // Show success message
+                        const formContainer = document.querySelector('.contact-form-container');
+                        formContainer.innerHTML = `
+        <div class="success-message">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+          <h3>Message Sent Successfully!</h3>
+          <p>Thank you for reaching out. I'll get back to you soon.</p>
+          <button class="submit-btn" onclick="location.reload()">Send Another Message</button>
+        </div>
+      `;
+                    } else {
+                        // Show error message
+                        submitBtn.innerHTML = originalContent;
+                        submitBtn.disabled = false;
+                        alert('Failed to send message. Please try again later.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    submitBtn.innerHTML = originalContent;
+                    submitBtn.disabled = false;
+                    alert('An error occurred. Please try again later.');
+                });
         });
     </script>
 </body>
