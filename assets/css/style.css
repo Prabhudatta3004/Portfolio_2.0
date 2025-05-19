@@ -257,6 +257,7 @@ nav.scrolled {
     height: 100% !important;
     border-radius: 50% !important;
     object-fit: cover !important;
+    object-position: top center !important;
     display: block !important;
 }
 
