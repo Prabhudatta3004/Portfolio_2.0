@@ -211,6 +211,17 @@
     .project-front h3 {
         font-size: 20px;
     }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-section,
+    .container {
+        min-height: unset;
+        height: auto;
+        overflow: visible;
+    }
 }
 
 @media (max-width: 580px) {
