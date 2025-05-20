@@ -269,8 +269,15 @@
 }
 
 @media (max-width: 768px) {
-    .contact-section {
-        padding-top: 100px;
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section,
+    .container {
+        min-height: unset;
+        height: auto;
+        overflow: visible;
     }
 
     .form-row {
