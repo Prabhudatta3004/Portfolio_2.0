@@ -27,7 +27,7 @@ export default async function handler(req, res) {
         // Email content
         const mailOptions = {
             from: process.env.EMAIL_USER,
-            to: process.env.RECIPIENT_EMAIL || 'pmishra4@ncsu.edu', // Your email address
+            to: process.env.RECIPIENT_EMAIL || 'prabhudattamishra25@gmail.com', // Your email address
             replyTo: email,
             subject: `Contact Form: ${subject}`,
             text: `
